@@ -25,7 +25,7 @@ except ImportError:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="IRRA Test")
-    parser.add_argument("--config_file", default='logs/CUHK-PEDES/iira/configs.yaml')
+    parser.add_argument("--config_file", default=' ')
     args = parser.parse_args()
     args = load_train_configs(args.config_file)
 
