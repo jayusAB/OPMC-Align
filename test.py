@@ -24,13 +24,13 @@ except ImportError:
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description="IRRA Test")
+    parser = argparse.ArgumentParser(description="OPMC-Align Test")
     parser.add_argument("--config_file", default=' ')
     args = parser.parse_args()
     args = load_train_configs(args.config_file)
 
     args.training = False
-    logger = setup_logger('IRRA', save_dir=args.output_dir, if_train=args.training)
+    logger = setup_logger('OPMC-Align', save_dir=args.output_dir, if_train=args.training)
     logger.info(args)
     device = "cuda"
 
